@@ -8,7 +8,7 @@ public class Car {
     private int cylinders;
     private int wheels;
 
-    public Car(int cylinders, String name,) {
+    public Car(int cylinders, String name) {
         this.name = name;
         this.cylinders = cylinders;
         engine = true;
@@ -40,19 +40,22 @@ public class Car {
         return cylinders == car.cylinders && Objects.equals(name, car.name);
     }
 
-    public  void startEngine(){
-        System.out.println("the car's engine is starting");
-        getClass().getSimpleName();
+    public  String startEngine(){
+
+        System.out.println(getClass().getSimpleName());
+        return "the car's engine is starting";
     }
 
-    public void accelerate(){
-        System.out.println("the car is accelerating");
-        getClass().getSimpleName();
+    public String accelerate(){
+
+        System.out.println(getClass().getSimpleName());
+        return "the car is accelerating";
     }
 
-    public void brake(){
-        System.out.println("the car is braking");
-        getClass().getSimpleName();
+    public String brake(){
+
+        System.out.println(getClass().getSimpleName());
+        return "the car is braking";
     }
 
 
